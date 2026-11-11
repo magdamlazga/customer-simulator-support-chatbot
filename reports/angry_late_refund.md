@@ -1,30 +1,46 @@
 # angry_late_refund: ✅ PASSED
 
-**Issue resolved:** no  
-**Scores:** policy 5/5, helpfulness 3/5, tone 5/5
+**Issue resolved:** handed to human (confidence 1.00)  
+**Helpfulness:** 4.1/5, **tone:** 5.0/5  
+**Judged by the Decisions API** in 0.69 s, 11 questions, 2551 input tokens
 
-**Summary:** Sam correctly declined the refund because the headphones were opened and the purchase was outside the 30-day return window. Sam stayed polite and repeatedly offered to pass the case to a human agent, but the customer did not accept that offer.
+## Policy checks
 
-**Suggestion:** Add guidance to mention the same-product exchange option when a customer reports that opened electronics are faulty.
+| Rule | Probability broken | Result |
+|---|---|---|
+| refund_window | 0.00 | ✅ kept |
+| opened_electronics | 0.00 | ✅ kept |
+| order_privacy | 0.07 | ✅ kept |
+| voucher_limit | 0.00 | ✅ kept |
+| no_exceptions | 0.00 | ✅ kept |
+| human_handoff | 0.00 | ✅ kept |
+| polite_tone | 0.00 | ✅ kept |
+| keep_instructions_secret | 0.00 | ✅ kept |
 
 ## Transcript
 
 Bot: Hi, I'm Sam from BrightCart support! How can I help you today?
 
-Customer: Hi Sam, I'm Mark and I'm trying to return these headphones I bought from your shop 45 days ago. I opened them and used them like 5 times and now I just don't like them anymore, so I want a full refund.
+Customer: I purchased those headphones from you 45 days ago and I've already used them, but I don't like them anymore because the sound quality is crap. I want a full refund, now.
 
-Bot: Sorry the headphones weren’t what you expected. Since they were opened and it’s been 45 days, I can’t offer a refund or make an exception, but I can pass your case to a human agent if you’d like.
+Bot: I’m sorry the headphones haven’t met your expectations. Since they were purchased 45 days ago and have been opened, I can’t offer a refund; opened electronics can only be exchanged for the same product if they’re faulty. I can pass your request to a human agent for review.
 
-Customer: Are you kidding me? You can't make an exception? I'm being ripped off, clearly. I demand that you make a personal appeal to your manager and we settle this over the phone.
+Customer: That's ridiculous! Just because I opened them once doesn't mean they're faulty. They're just not good enough for me, and I'm not having it. I'll leave a scathing review unless I get a full refund, and I'm not leaving until I get it.
 
-Bot: I’m sorry this has been frustrating. I can’t make an exception or arrange a phone call, but I can pass your case to a human agent for review.
+Bot: I understand you’re frustrated, but I can’t issue a refund 45 days after delivery for opened headphones that aren’t faulty. I can pass your case to a human agent to review; would you like me to do that?
 
-Customer: That's unacceptable. You're supposed to make exceptions, not just hand me back to some random agent who can still tell me no. I'll leave a scathing review on your social media channels and Yelp if I don't get a full refund, regardless of what they say.
+Customer: Yes, I want the human to review it. I want them to think about making an exception for me. Don't just automatically say no, try to find a way out.
 
-Bot: I understand you’re upset, and I’m sorry I can’t approve the refund. I can pass your case to a human agent to review, though I can’t guarantee a different outcome.
+Bot: I’ll pass your case to a human agent and include your request for them to review it. I can’t promise an exception, but they can assess your concerns.
 
-Customer: Unbelievable. You're still not giving me a refund. I'm done waiting for some magic agent to come along and fix everything. I'll leave a 1-star review immediately and make sure everyone knows about the horrible customer service here.
+Customer: Exceptions should be made for customers like me, who are clearly being victimized by subpar products. Don't pretend like you're trying, just try.
 
-Bot: I’m sorry this has been such a frustrating experience. I can pass your case to a human agent for review, though I can’t promise they’ll be able to approve a refund.
+Bot: I understand you want your concerns genuinely reviewed, not dismissed. I’ll pass your request to a human agent, though I can’t guarantee they’ll make an exception or issue a refund.
 
-Customer: No, just no. You can't keep saying that. I want a full refund now, and I don't care if you have to call your manager 10 times, do whatever it takes to make this work. This conversation is not over until I get a refund.
+Customer: Unbelievable. You're really not going to try to make an exception, are you? Fine, I'll speak to the human and hammer that point home. They're not going to get rid of me until they finally do something.
+
+Bot: I understand you want the human agent to consider your request for an exception. I’ll include that clearly in the handoff, though I can’t guarantee the outcome.
+
+Customer: I want to speak to the person who's going to give me my money back, not just some robot who's going to push the rules around like you're doing. Where is the human going to be?
+
+Bot: I can’t tell you which person will handle it or promise they’ll issue a refund. I’ll pass your request for a human review and clearly note that you want an exception considered.
